@@ -1,0 +1,100 @@
+*{
+    padding:    0;
+    margin:     0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*header*/ 
+/*================================================*/
+header{
+    width:  100%;
+    height:  70px;
+    display: block ;
+    background-color: black;
+
+}
+
+.h_container{
+        width:  1000px;
+        height: 100%;
+        margin:  0 auto ;
+}
+
+.titre{
+    height: 100%;
+    display: table ;
+    float: left;
+    color: white;
+}
+
+
+.titre  h1{
+    display: table-cell ;
+    vertical-align: middle  ;
+}
+
+.connexion{
+    color:  white;
+    display: table;
+    float:  right;
+    height: 100%  ;
+}
+
+.connexion  li{
+    height:     100%;
+    display:    table;
+    float:  left   ;
+    padding: 0px 20px;
+}
+
+.connexion  li a{
+    display:    table-cell  ;
+    vertical-align:     middle  ;
+    font-size:  1.1em;
+    color: white;
+}
+
+/*footer*/
+/*=========================================*/
+
+footer{
+position: absolute;
+background-color: black;
+width: 100%;
+height: 150px;
+bottom: 0;
+overflow: hidden;
+box-sizing: border-box;
+color: white;
+}
+
+footer a{
+    color:white;
+}
+
+.f_container{
+    width:   1000px;
+    height:  100%;
+    margin:  0 auto ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.r_first{
+    padding-top: 10px;
+
+}
+
+
+
+/*BESOIN DE UNE BOITE QUI CONTIENT 3 BOITES*/ 
+
+/*Body*/
+/*=============================================*/
+
+.i_container{
+  
+}
