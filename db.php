@@ -1,9 +1,9 @@
 <?php
 //Dossier Data Base 
-$db_user = "root";
-$db_pass= "";
-$db_name = "moduleconnexion";
+$db_user = "yanice";
+$db_pass= "123456789";
+$db_name = "yanice-bacari-souleman_moduleconnexion";
 
-$conn = new mysqli('localhost', 'root', '', "moduleconnexion");
+$conn = new mysqli('localhost:3306', 'yanice', '123456789', "yanice-bacari-souleman_moduleconnexion");
 
  

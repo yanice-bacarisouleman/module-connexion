@@ -26,24 +26,77 @@ $row = mysqli_fetch_assoc($sql);
 $_SESSION["login"] = $row['login'];
 header ("refresh:0.1;url=index.php");
 }
-echo 'Connecté en tant que '.$_SESSION['login'];
 
 ?>
 
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
 
+<div class="case_log">
+        <h2>Modifier Votre Profil</h2>
+    </div>
 
 <form action="" method="post">
+        
+ <?php echo 'Connecté en tant que '.$_SESSION['login']; ?>
+
+<div class="input_">
     <label for="prenom">Prenom</label>
     <input type="text" id="prenom" name="prenom" required>
+</div>
 
+<div class="input_">   
     <label for="nom">Nom</label>
     <input type="text" id="nom" name="nom">
-
+</div>
+    
+<div class="input_">
     <label for="login">Nom d'utilisateur</label>
     <input type="text" id="login" name="login">
-
+</div>
+    
+<div class="input_">
     <label for="password">Mot de passe</label>
     <input type="password" id="password" name="password">
-    <button type="submit" name="signup-btn">Envoyer</button>
+</div>    
+
+<div class="input_">
+    <button type="submit" name="signup-btn" class="btn">Modifier</button>
+</div>
 
     </form>
+
+
+
+
+
+
+<footer>
+    
+<div class="f_container">
+
+    
+
+    <div class="f_first">
+        <h3>Contact</h3>
+        <ul class="r_first">
+       <li><a href="#">Github</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Discord</a></li>
+        </ul>    
+    </div>
+</div>
+
+</footer>
+</body>
+
+
+</html>

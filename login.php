@@ -1,6 +1,22 @@
 <?php
 require 'db.php';
+?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="case_log">
+        <h2>Connexion</h2>
+    </div>
+
+<form action="" method="post">
+<?php
 if(isset($_POST['login-btn'])){
     $login=$_POST['login'];
     $password=$_POST['password'];
@@ -39,28 +55,31 @@ if(isset($_POST['login-btn'])){
          
      }
          else {
-             echo "Utilisateur/Mot de passe incorrect.";
-         }
+        
+            echo "Utilisateur/Mot de passe incorrect.";
+            
+                     }
 }
 }
 
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login</title>
-</head>
-<body>
-<form action="" method="post">
+    <div class="input_">
     <label for="login">Nom d'utilisateur</label>
     <input type="text" id="login" name="login">
+   </div>
+
+   <div class="input_">
     <label for="password">Mot de passe</label>
     <input type="password" id="password" name="password">
-    <button type="submit" name="login-btn">Envoyer</button>
+    </div>
+
+   <div class="btn">
+    <button type="submit" name="login-btn" class="btn">Envoyer</button>
+   </div>   
+
+    
     </form>
 </body>
 </html>

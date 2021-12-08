@@ -27,18 +27,20 @@ $sql = "INSERT INTO utilisateurs (login, prenom, nom, password) VALUES ('$login'
 $conn -> query($sql);
 if(empty($login)) {
 $errors['username'] = "L'identifiant est manquant";
-}
+                }
 
 if(empty($prenom)) {
     $errors['prenom'] = "Le prenom est manquant";
-}
+                    }
 
 if(empty($nom)) {
     $errors['nom'] = "Le nom est manquant";
-}
+                }
 
 if(empty($password)) {
     $errors['password'] = "Le mot de passe est manquant";
+                    }
 }
 }
-}
+
+?>

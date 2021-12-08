@@ -14,9 +14,7 @@
         </div>
 
         <ul class="connexion">
-            <li><a href="connexion.php">Connexion</a></li> 
-            <li><a href="inscription.php">Inscription</a></li> 
-            <li><a href="binance.com">Equipe</a></li> 
+        
             <li><a href="index.html">Acceuil</a></li>
 
     </div>
